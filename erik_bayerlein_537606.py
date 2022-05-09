@@ -2,7 +2,7 @@
 # calcule a soma de todos os números primos que existem até o número informado.
 
 # Entrada do número inteiro
-num = int(input("Digite um número: "))
+num = int(input())
 
 # Contador para guardar a soma dos números primos
 count_prim = 0
@@ -10,7 +10,7 @@ count_prim = 0
 # Exluir todos os inteiros negativos, o zero e o 1, visto que não há como somar
 # números primos digitando o valor 1
 while num <= 0 or num == 1:
-    num = int(input("Entrada inválida. Digite um número: "))
+    num = int(input())
 
 # Repetição de 1 até o número escolhio (+ 1 para excluir o zero)
 for i in range (1,num + 1):
@@ -23,4 +23,5 @@ for i in range (1,num + 1):
         count_prim += i
 
 # Dados de saída (a soma dos números primos até o número (num) escolhido)
-print ("A soma dos números primos até %i é: %i" %(num,count_prim))
+print (count_prim)
+# print ("A soma dos números primos até %i é: %i" %(num,count_prim))
