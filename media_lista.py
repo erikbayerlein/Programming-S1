@@ -23,3 +23,17 @@ while True:
 media = g / count
 
 print (media)
+
+# OU ASSIM:
+
+#while True:
+    #n = float(input("Digite a nota do %iº aluno: " %(count+1)))
+    #A.append(n)
+    #if n < 0 or n > 10:
+        #break
+    #g += A[count]
+    #count += 1
+
+#media = g / count
+
+#print (media)
