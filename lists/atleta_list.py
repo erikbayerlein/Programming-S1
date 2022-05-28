@@ -20,7 +20,6 @@
 
 n = input("Digie o nome do atleta: ")
 
-Nome = [0]
 soma = 0
 
 if n == "":
