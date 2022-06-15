@@ -13,20 +13,21 @@ while True:
 
 tam_num = len(num) - num.count("-") - num.count(" ")
 
-if tam_num == 9:
-    if tam_num == 9 and num.count("-") == 1 or num.count(" ") == 1:
-        list_num = list(num)
-        list_num.insert(0, 9)
-        print ("Está faltando o 9 na frente do número.")
-        new_num = "".join(list_num)
-        print ("O seu número corrigido é: %s" %new_num)
-    
-    print ("O seu número está correto: %s" %num)
-
 if tam_num == 9 and num.count("-") == 1 or num.count(" ") == 1:
     list_num = list(num)
     list_num.insert(0, 9)
     print ("Está faltando o 9 na frente do número.")
     new_num = "".join(list_num)
     print ("O seu número corrigido é: %s" %new_num)
+
+elif tam_num == 9 and num.count("-") == 0 and num.count(" ") == 0:
+    print ("O seu número está correto: %s" %num)
+
+elif tam_num == 8 and num.count("-") == 0 and num.count(" ") == 0:
+    list_num = list(num)
+    list_num.insert(0, 9)
+    print ("Está faltando o 9 na frente do número.")
+    new_num = "".join(list_num)
+    print ("O seu número corrigido é: %s" %new_num)
+
 
