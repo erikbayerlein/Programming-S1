@@ -22,6 +22,5 @@ if len(a2) == len(a1):
     for i in range(len(a1_low)):
         a1_low.count(i)
 
-
 else:
     print ("Não são anagramas, pois possuem tamanhos diferentes.")
