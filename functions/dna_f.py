@@ -4,29 +4,30 @@
 #Entrada: AATCTGCAC 
 #Saída: TTAGACGTG
 
-import random
+def dna_complemento (dna_origem):
+    list_dna = list(dna_origem)
+    dna_2 = []
+    for i in range(len(list_dna)):
+        if list_dna[i] == "A":
+            dna_2.append("T")
+        elif list_dna[i] == "T":
+            dna_2.append("A")
+        elif list_dna[i] == "C":
+            dna_2.append("G")
+        elif list_dna[i] == "G":
+            dna_2.append("C")
+    dna = "".join(dna_2)
+    return dna
 
-mat = []
+letras = ["A", "C", "T", "G"]
 
-for i in range (10):
-    linha = []
-    for j in range (10):
-        linha.append(0)
-    mat.append(linha)
+#while True:
+dna_origem = input("Digite a sequência inicial de DNA: ")
+    #if letras in dna_origem.upper():
+        #break
+    #else:
+        #print ("Entrada inválida. Tente novamente.")
+print (dna_origem)
 
-print (mat)
-
-k = 0
-
-while k < 10:
-    while True:    
-        i = random.choice(range(10))
-        j = random.choice(range(10))
-        if mat[i][j] == 1:
-            break
-        else:
-            mat[i][j] = 1
-            k += 1
-            break
-        
-print (mat)
+dna_comp = dna_complemento(dna_origem)
+print (dna_comp)
